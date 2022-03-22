@@ -9,7 +9,7 @@ export default function Favorites({ favorites }) {
   };
 
   return (
-    <div className="absolute right-6 top-15 z-20">
+    <div className="absolute top-2 right-2 md:right-6 md:top-15 z-20">
       <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
         <button
           type="submit"
