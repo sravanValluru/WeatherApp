@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Favorites({ favorites }) {
+export default function Favorites({ favorites, setCity }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleClick = (e) => {
@@ -24,7 +24,8 @@ export default function Favorites({ favorites }) {
           favorites.map((city) => (
             <div
               key={city}
-              className="bg-white text-slate-900 mt-3 p-2 text-center shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0"
+              className="cursor-pointer bg-white text-slate-900 mt-3 p-2 text-center shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0"
+              onClick={() => setCity(city)}
             >
               {city.charAt(0).toUpperCase() + city.slice(1)}
             </div>

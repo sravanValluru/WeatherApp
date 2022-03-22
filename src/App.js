@@ -46,7 +46,7 @@ function App() {
         Weather App
       </div>
       <SearchCity setCity={setCity} />
-      <Favorites favorites={favorites} />
+      <Favorites favorites={favorites} setCity={setCity} />
       <div className="flex lg:flex-row flex-col w-full place-content-between lg:place-content-evenly">
         {city && (
           <CurrentWeather

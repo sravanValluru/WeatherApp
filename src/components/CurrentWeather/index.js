@@ -24,7 +24,10 @@ export default function CurrentWeather({
         }
       })
       .catch((err) => console.log("CurrentWeather: err", err));
-    setIsToggle(false);
+
+    if (favorites.length > 0) {
+      favorites.includes(city) ? setIsToggle(true) : setIsToggle(false);
+    }
   }, [city, base, apiKey]);
 
   const handleFavorites = () => {
