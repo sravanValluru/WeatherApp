@@ -35,9 +35,10 @@ export default function CurrentWeather({ city, base, apiKey }) {
               {city.toUpperCase()}
             </h2>
             <img
-              className="col-span-1"
+              className="col-span-1 w-20"
               alt={weatherInfo.weather[0].description}
               src={`https://openweathermap.org/img/wn/${weatherInfo.weather[0].icon}.png`}
+              //   style={{ width: "70px" }}
             />{" "}
             <h3 className="col-span-1 mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-6xl">
               {weatherInfo.main && weatherInfo.main.temp} °c

@@ -12,7 +12,7 @@ const api = {
 function App() {
   const [city, setCity] = useState("");
   return (
-    <div className="container mx-auto px-4 py-16 flex flex-col place-items-center">
+    <div className="mx-auto px-4 py-16 flex flex-col place-items-center mx-12 md:mx-20">
       <div className="text-5xl text-indigo-600" style={{ fontWeight: 900 }}>
         Weather App
       </div>
