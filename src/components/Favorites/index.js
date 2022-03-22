@@ -24,7 +24,7 @@ export default function Favorites({ favorites, setCity }) {
           favorites.map((city) => (
             <div
               key={city}
-              className="cursor-pointer bg-white text-slate-900 mt-3 p-2 text-center shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0"
+              className="cursor-pointer bg-white hover:bg-slate-200 transition text-slate-900 mt-3 p-2 text-center shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0"
               onClick={() => setCity(city)}
             >
               {city.charAt(0).toUpperCase() + city.slice(1)}
