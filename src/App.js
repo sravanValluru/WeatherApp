@@ -9,8 +9,8 @@ const api = {
   key: "67750f6daace7049e45faba8b8e6bcb6",
   base: "https://api.openweathermap.org/data/2.5/weather",
   baseForecast: "https://api.openweathermap.org/data/2.5/forecast",
-  baseGeo: "http://api.openweathermap.org/geo/1.0/direct",
-  baseAirPollution: "http://api.openweathermap.org/data/2.5/air_pollution",
+  baseGeo: "https://api.openweathermap.org/geo/1.0/direct",
+  baseAirPollution: "https://api.openweathermap.org/data/2.5/air_pollution",
 };
 
 function App() {
