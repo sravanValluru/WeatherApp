@@ -19,7 +19,7 @@ export default function CurrentWeather({ city, base, apiKey }) {
       .catch((err) => console.log("CurrentWeather: err", err));
   }, [city, base, apiKey]);
   return (
-    <div className="my-16">
+    <div className="my-12">
       {Object.keys(weatherInfo).length == 0 && (
         <h3 className="mt-2 text-lg leading-8 font-semibold tracking-tight text-gray-900 sm:text-2xl">
           Oh no!! City not found.
@@ -28,7 +28,7 @@ export default function CurrentWeather({ city, base, apiKey }) {
       {weatherInfo.main && (
         <>
           <div
-            className="grid gap-1 items-center bg-white rounded-lg shadow p-8"
+            className="grid gap-1 items-center bg-white rounded-lg shadow p-8 mx-2"
             style={{ gridtemplateColumns: "20% 80%" }}
           >
             <h2 className="col-span-2 text-xl leading-2 text-indigo-600 font-semibold tracking-wide uppercase">
