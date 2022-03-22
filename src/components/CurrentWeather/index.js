@@ -32,6 +32,9 @@ export default function CurrentWeather({
     if (!favorites.includes(city)) {
       setIsToggle(!isToggle);
       setFavorites([...favorites, city]);
+    } else {
+      setIsToggle(!isToggle);
+      setFavorites(favorites.filter((item) => item !== city));
     }
   };
 
